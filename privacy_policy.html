@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>מדיניות פרטיות – Vigox</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f5f7fa;
+      color: #1a1a2e;
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      color: #fff;
+      padding: 48px 24px 36px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.75;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e94560;
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-top: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 32px 36px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      border-right: 4px solid #e94560;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #0f3460;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .icon { font-size: 1.4rem; }
+
+    p { margin-bottom: 12px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      padding: 6px 0 6px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    ul li::before {
+      content: "•";
+      color: #e94560;
+      font-weight: 900;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .highlight-box {
+      background: #fff3f5;
+      border: 1.5px solid #e94560;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-top: 12px;
+      font-size: 0.95rem;
+      color: #7a0020;
+    }
+
+    .contact-box {
+      background: #f0f4ff;
+      border: 1.5px solid #0f3460;
+      border-radius: 8px;
+      padding: 18px 22px;
+      margin-top: 14px;
+    }
+
+    .contact-box a {
+      color: #0f3460;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .contact-box a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
+      padding: 20px 0 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.7rem; }
+      section { padding: 22px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🛡️ Vigox</h1>
+  <p>אפליקציית ביטחון אישי וזיהוי חירום</p>
+  <div class="badge">מדיניות פרטיות</div>
+</header>
+
+<main>
+
+  <!-- 1. מבוא -->
+  <section>
+    <h2><span class="icon">📋</span>מבוא</h2>
+    <p>
+      ברוכים הבאים ל-<strong>Vigox</strong> – אפליקציית ביטחון אישי וזיהוי חירום. מדיניות פרטיות זו מסבירה
+      כיצד אנו אוספים, משתמשים ושומרים על המידע האישי שלך.
+    </p>
+    <p>
+      השימוש באפליקציה מהווה הסכמה לתנאים המפורטים במסמך זה.
+      תאריך עדכון אחרון: <strong>מאי 2026</strong>.
+    </p>
+  </section>
+
+  <!-- 2. מידע שנאסף -->
+  <section>
+    <h2><span class="icon">📊</span>מידע שאנו אוספים</h2>
+    <ul>
+      <li><strong>מיקום GPS</strong> – קואורדינטות מדויקות בזמן אירוע חירום ועדכוני מיקום בזמן מעקב ליווי (כל 3 דקות)</li>
+      <li><strong>חשבון משתמש</strong> – שם ואימייל דרך Google Sign-In (Firebase Authentication)</li>
+      <li><strong>אנשי קשר לחירום</strong> – שם ומספר טלפון של אנשי הקשר שהמשתמש הוסיף בעצמו</li>
+      <li><strong>הקלטות שמע</strong> – הקלטת סביבה אוטומטית בעת הפעלת אזעקת חירום, מועלית ל-Firebase Storage</li>
+      <li><strong>נתוני חיישנים</strong> – תאוצה וג'ירוסקופ לצורך זיהוי נפילה ורעידה</li>
+      <li><strong>נתוני מכשיר</strong> – דגם המכשיר ומערכת הפעלה לצורך דיווחי באגים בלבד</li>
+      <li><strong>סריקת בלוטות' ו-Wi-Fi</strong> – זיהוי מכשירים קרובים בזמן חירום להקשר סביבתי</li>
+      <li><strong>רמת סוללה</strong> – ניטור ברקע לצורך התראה על סוללה חלשה</li>
+      <li><strong>קלט קולי</strong> – זיהוי מילת קוד להפעלת חירום (עיבוד מקומי בלבד, ללא שמירה)</li>
+      <li><strong>יומן אירועים</strong> – רישום אירועי חירום (זמן, מיקום, סטטוס) ב-Cloud Firestore</li>
+    </ul>
+  </section>
+
+  <!-- 3. שימוש במידע -->
+  <section>
+    <h2><span class="icon">🎯</span>כיצד אנו משתמשים במידע</h2>
+    <ul>
+      <li>שליחת SMS חירום עם מיקום לאנשי הקשר שהגדרת</li>
+      <li>עדכוני מיקום בזמן אמת בעת הפעלת מעקב ליווי</li>
+      <li>שמירת יומן אירועי חירום שלך להיסטוריה אישית</li>
+      <li>שיפור ביצועי האפליקציה ותיקון שגיאות</li>
+      <li>אימות זהות המשתמש ושמירת הגדרות אישיות</li>
+    </ul>
+    <div class="highlight-box">
+      ⚠️ לא נמכר, לא משותף, ולא מועבר מידע אישי לצדדים שלישיים לצרכי שיווק.
+      המידע משמש אך ורק לפעולת האפליקציה.
+    </div>
+  </section>
+
+  <!-- 4. הרשאות -->
+  <section>
+    <h2><span class="icon">🔐</span>הרשאות נדרשות</h2>
+    <ul>
+      <li><strong>מיקום (תמיד)</strong> – נדרש לשליחת מיקום בחירום גם כשהאפליקציה ברקע</li>
+      <li><strong>מיקרופון</strong> – הקלטת שמע סביבתי בזמן אזעקת חירום</li>
+      <li><strong>אנשי קשר</strong> – בחירת אנשי קשר ישירות מספר הטלפון שלך</li>
+      <li><strong>SMS</strong> – שליחת הודעת חירום לאנשי הקשר</li>
+      <li><strong>פנס</strong> – אות SOS בהבהוב</li>
+      <li><strong>בלוטות' ו-Wi-Fi</strong> – זיהוי סביבה בזמן חירום</li>
+      <li><strong>הפעלה עם האתחול</strong> – הפעלת שירות הרקע לאחר הפעלת המכשיר</li>
+    </ul>
+  </section>
+
+  <!-- 5. שמירה ואבטחה -->
+  <section>
+    <h2><span class="icon">🔒</span>אחסון ואבטחת מידע</h2>
+    <p>
+      המידע שלך מאוחסן בשירותי Firebase של Google (Authentication, Firestore, Storage)
+      בתשתית מאובטחת עם הצפנה בתעבורה ובמנוחה.
+    </p>
+    <ul>
+      <li>הקלטות שמע נשמרות בחשבון Firebase Storage הפרטי שלך ומוגנות בחוקי אבטחה</li>
+      <li>אנשי קשר ואירועים מאוחסנים תחת מזהה המשתמש הייחודי שלך בלבד</li>
+      <li>הגדרות אישיות נשמרות מקומית במכשיר (SharedPreferences)</li>
+    </ul>
+  </section>
+
+  <!-- 6. שיתוף עם צדדים שלישיים -->
+  <section>
+    <h2><span class="icon">🤝</span>שיתוף עם צדדים שלישיים</h2>
+    <p>אנו עשויים לשתף מידע רק במצבים הבאים:</p>
+    <ul>
+      <li><strong>Google / Firebase</strong> – ספק התשתית (אחסון, אימות, מסד נתונים)</li>
+      <li><strong>ספק SMS</strong> – לשליחת הודעת חירום לאנשי הקשר שלך בלבד</li>
+      <li><strong>דרישה חוקית</strong> – אם נדרשים על פי חוק</li>
+    </ul>
+    <p>לא נמכור ולא נעביר מידע אישי לכל גורם אחר.</p>
+  </section>
+
+  <!-- 7. זכויות המשתמש -->
+  <section>
+    <h2><span class="icon">👤</span>הזכויות שלך</h2>
+    <ul>
+      <li><strong>גישה</strong> – ראה את כל המידע השמור עליך</li>
+      <li><strong>תיקון</strong> – ערוך אנשי קשר והגדרות בכל עת</li>
+      <li><strong>מחיקה</strong> – מחק את חשבונך ואת כל הנתונים דרך הגדרות האפליקציה</li>
+      <li><strong>ביטול הרשאות</strong> – שלוט בהרשאות דרך הגדרות המכשיר שלך בכל עת</li>
+    </ul>
+  </section>
+
+  <!-- 8. ילדים -->
+  <section>
+    <h2><span class="icon">👶</span>פרטיות ילדים</h2>
+    <p>
+      האפליקציה מיועדת למשתמשים מגיל 13 ומעלה. אנו לא אוספים ביודעין מידע מילדים מתחת לגיל 13.
+      אם גילית שילד שמור מידע, אנא צור קשר כדי שנמחק אותו.
+    </p>
+  </section>
+
+  <!-- 9. שינויים במדיניות -->
+  <section>
+    <h2><span class="icon">🔄</span>שינויים במדיניות</h2>
+    <p>
+      אנו עשויים לעדכן מדיניות זו מעת לעת. שינויים מהותיים יפורסמו באפליקציה.
+      המשך השימוש לאחר עדכון מהווה הסכמה למדיניות החדשה.
+    </p>
+  </section>
+
+  <!-- 10. יצירת קשר -->
+  <section>
+    <h2><span class="icon">📬</span>יצירת קשר</h2>
+    <p>לשאלות בנוגע למדיניות הפרטיות, ניתן לפנות אלינו:</p>
+    <div class="contact-box">
+      📧 <a href="mailto:yairasulin5@gmail.com">yairasulin5@gmail.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Vigox – כל הזכויות שמורות</p>
+  <p style="margin-top:6px; font-size:0.8rem;">עדכון אחרון: מאי 2026</p>
+</footer>
+
+</body>
+</html>
